@@ -12,27 +12,31 @@
 </head>
 <body>
   
-  <header>
-    <img src="images/doughp-logo.webp" alt="company logo saying DoughP">
+  <header id="header" role="banner">
+    <div>
+      <span id="company-name"><img src="images/doughp-logo.webp" alt="company logo saying DoughP"></span>
 
-    <nav>
-      <ul>
-        <li>Shop</li>
-        <li>About Us</li>
-      </ul>
-    </nav>
+      <nav role="navigaion">
+        <ul>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
 
-  <main>
+  <main role="main">
     <section>
-      <img src="images/product-shot-1.webp" alt="picture of the red velvet cookie dough drops product">
-      <img src="images/product-shot-2.webp" alt="picture of the red velvet cookie drop product on a plate">
-      <img src="images/product-shot-3.webp" alt="picture of the chocolate chip cookie dough product">
-      <img src="images/product-shot-4.webp" alt="picture of the peanut buter cokkie dough product">
+      <div class="limited-edition-grid">  
+        <img src="images/product-shot-1.webp" alt="picture of the red velvet cookie dough drops product">
+        <img src="images/product-shot-2.webp" alt="picture of the red velvet cookie drop product on a plate">
+        <img src="images/product-shot-3.webp" alt="picture of the chocolate chip cookie dough product">
+        <img src="images/product-shot-4.webp" alt="picture of the peanut buter cokkie dough product">
+      </div>
     </section>
 
-    <section>
+    <section id="intro">
       <h1>Valentine's Day "Bite Me"</h1>
       <p>Limited edition</p>
       <p>Red Velvet Cupcake, Peanut Butter Kiss and Chocolate Chip</p>
@@ -55,47 +59,60 @@
     </section>
 
     <section>
-      <h2>What people are saying</h2>
+      <div class="quotes">
+        <h2>What people are saying</h2>
 
-      <p>"It’s just so Doughp! I didn’t know what to expect, but I am so addicted now. Every flavor was delicious and I honestly can’t wait to try even more!"<p>
+        <article>
+          <p>"It’s just so Doughp! I didn’t know what to expect, but I am so addicted now. Every flavor was delicious and I honestly can’t wait to try even more!"</p>
+          <i>Andrew J.</i>
+        </article>
 
-      <p>Andrew J.</p>
+        <article>
+          <p>"Great product. Absolutely loved Doughp. Tasted great, came quickly and I love a good cause. Was happy I chose the four pack so that I could try a few flavors."</p>
+          <i>Emely W.</i>
+        </article>
 
-
-      <p>"Great product. Absolutely loved Doughp. Tasted great, came quickly and I love a good cause. Was happy I chose the four pack so that I could try a few flavors."</p>
-
-      <p>Emely W.</p>
-
-
-      <p>"Life changing! This is something you absolutely need to indulge in. Our entire family is obsessed."</p>
-
-      <p>Ana S.</p>
+        <article>
+          <p>"Life changing! This is something you absolutely need to indulge in. Our entire family is obsessed."</p>
+          <i>Ana S.</i>
+        </article>
+      </div>
     </section>
 
     <section>
       <h2>Try it with...</h2>
 
-      <img src="images/ride-or-die.webp" alt="picture of ride or die cookie dough product">
-      <p>Ride or Die<p>
-      <p>$17.00<p>
+      <div class="try-grid">
+        <article>
+          <img src="images/ride-or-die.webp" alt="picture of ride or die cookie dough product">
+          <h3>Ride or Die</h3>
+          <p>$17.00</p>
+        </article>
 
-      <img src="images/brownie-beast.webp" alt="picture of the brownie beast cookie dough product">
-      <p>Brownie Beast</p>
-      <p>$17.00<p>
+        <article>
+          <img src="images/brownie-beast.webp" alt="picture of the brownie beast cookie dough product">
+          <h3>Brownie Beast</h3>
+          <p>$17.00</p>
+        </article>
 
-      <img src="images/cookie-monsta.webp" alt="picture of cookie monsta cookie dough product">
-      <p>Cookie Monsta</p>
-      <p>$17.00</p>
+        <article>
+          <img src="images/cookie-monsta.webp" alt="picture of cookie monsta cookie dough product">
+          <h3>Cookie Monsta</h3>
+          <p>$17.00</p>
+        </article>
 
-      <img src="images/smores.webp" alt="picture of s'mores cookie dough product">
-      <p>You Want S'more!?</p>
-      <p>$17.00</p>
+        <article>
+          <img src="images/smores.webp" alt="picture of s'mores cookie dough product">
+          <h3>You Want S'more!?</h3>
+          <p>$17.00</p>
+        </article>
+      </div>  
     </section>
   </main>
 
 
   <footer>
-    <p>&copy; 2023 Doughp Cookie Dough</p>
+    <small>&copy; 2023 Doughp Cookie Dough</small>
   </footer>
 
 </body>

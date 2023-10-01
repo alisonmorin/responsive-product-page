@@ -29,5 +29,67 @@ img {
   max-width: 100%;
 }
 
+#header > div {
+  display: flex;
+  justify-content: space-between;
+  align-items : center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: felx;
+}
+
+nav ul li {
+  padding-left: 1.125em;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+  color: red;
+}
+
+.limited-edition-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr 1fr;
+  gap: 1em;
+
+  margin: 2.5em 0;
+}
+
+.quotes {
+  background-color:black;
+  color: white;
+  padding: 2em 4em;
+}
+
+.try-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+
+  margin: 2em 4em;
+}
+
+.try-grid article {
+  background-color: #D3D3D3;
+  border-radius: 20px;
+  text-align: center;
+}
 
 
+
+
+
+
+footer {
+  text-align: center;
+  padding: 2em;
+}
