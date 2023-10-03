@@ -26,7 +26,7 @@ body {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 #header > div {
@@ -38,7 +38,7 @@ img {
 nav ul {
   list-style-type: none;
   padding-left: 0;
-  display: felx;
+  display: flex;
 }
 
 nav ul li {
@@ -58,10 +58,27 @@ nav ul li a:focus {
 
 .limited-edition-grid {
   display: grid;
-  grid-template-columns: 3fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 1em;
 
   margin: 2.5em 0;
+}
+
+#picture-1 {
+  grid-column: 1 / 4;
+}
+
+.button {
+  display: inline-block;
+  padding: 0.5em 0.75em;
+  text-decoration: none;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+}
+
+.button:hover {
+  background-color: red;
 }
 
 .quotes {
@@ -84,6 +101,10 @@ nav ul li a:focus {
   text-align: center;
 }
 
+
+.try-grid img {
+  border-radius: 20px 20px 0 0;
+}
 
 
 
