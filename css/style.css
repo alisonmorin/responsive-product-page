@@ -37,14 +37,13 @@ img {
 
 .wrapper {
   margin: 0 auto;
-  padding: 2em 2em;
+  padding: 1.5em 2em;
 }
 
 
 
-
 p {
-  font-size: var(--font-size-base:);
+  font-size: var(--font-size-base);
 }
 
 h1 {
@@ -67,12 +66,9 @@ h4 {
   text-transform: uppercase;
 }
 
-span {
-  font-size: var(--font-size-md);
+.price {
+  font-size: 1.5em;
 }
-
-
-
 
 
 
@@ -90,6 +86,8 @@ nav ul {
 
 nav ul li {
   padding-left: 1.125em;
+  font-size: 1.5em;
+  text-transform: uppercase;
 }
 
 nav ul li a:link,
@@ -101,18 +99,6 @@ nav ul li a:visited {
 nav ul li a:hover,
 nav ul li a:focus {
   color: red;
-}
-
-.limited-edition-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
-
-  margin: 2.5em 0;
-}
-
-#picture-1 {
-  grid-column: 1 / 4;
 }
 
 .limited-edition-grid img {
@@ -138,14 +124,6 @@ nav ul li a:focus {
   padding: 2em 4em;
 }
 
-.try-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2em;
-
-  margin: 2em 0;
-}
-
 .try-grid div {
   background-color: #D3D3D3;
   border-radius: 20px;
@@ -157,9 +135,6 @@ nav ul li a:focus {
   border-radius: 20px 20px 0 0;
 }
 
-
-
-
 footer {
   text-align: center;
   padding: 2em;
@@ -167,9 +142,86 @@ footer {
 
 
 @media (min-width: 38em) {
-    
+  .intro-grid {
+    display: grid;
+  }
+
+  .intro-grid > .wrapper {
+    padding: 0em 2em;
+  }
+
+  .limited-edition-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+  
+    margin: 2.5em 0;
+  }
+  
+  #picture-1 {
+    grid-column: 1 / 4;
+  }
+  
+  #bite-me-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .behind-grid {
+    display: grid;
+    margin: 2em 0;
+  }
+
+  .quotes-grid {
+    display: grid;
+    gap: 1em;
+    margin: 2em 0;
+  }
+
+  .try-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  
+    margin: 2em 0;
+  }
+  
 }
 
 @media (min-width: 60em) {
+  .wrapper {
+    max-width: 80%;
   
+
+  .intro-grid {
+    grid-template-columns: 1fr 1fr;
+    padding: 0em 2em;
+    gap: 2em;
+  }
+
+  .intro-grid > .wrapper {
+    padding: 0em 0em;
+  }
+
+  #picture-1 {
+    grid-column: 1/2
+  }
+  
+  .limited-edition-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .behind-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+  }
+
+  .quotes-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4em;
+  }
+
+  .try-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
