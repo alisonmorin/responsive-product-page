@@ -40,7 +40,11 @@ img {
   padding: 1.5em 2em;
 }
 
-
+.wrapper-black {
+  margin: 0 auto;
+  padding: 1.5em 2em;
+  background-color: black;
+}
 
 p {
   font-size: var(--font-size-base);
@@ -49,6 +53,7 @@ p {
 h1 {
   font-size: var(--font-size-xl);
   font-weight: lighter;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -64,13 +69,22 @@ h4 {
   font-size: var(--font-size-base);
   font-weight: bold;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .price {
   font-size: 1.5em;
 }
 
+span {
+  margin-top: 0;
+}
 
+#border-top {
+  border-top: solid;
+  border-top-color: lightgray;
+}
 
 #header > div {
   display: flex;
@@ -119,9 +133,12 @@ nav ul li a:focus {
 }
 
 .quotes {
-  background-color:black;
   color: white;
-  padding: 2em 4em;
+  padding: 2em 0;
+}
+
+i {
+  margin-left: 2.5em;
 }
 
 .try-grid div {
@@ -191,7 +208,11 @@ footer {
 @media (min-width: 60em) {
   .wrapper {
     max-width: 80%;
+  }
   
+  .wrapper-black {
+    max-width: 80%;
+  }
 
   .intro-grid {
     grid-template-columns: 1fr 1fr;
